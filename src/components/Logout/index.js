@@ -1,6 +1,6 @@
 import React from "react";
 import Swal from "sweetalert2";
-//import { withAuthenticator } from "@aws-amplify/ui-react";
+import { withAuthenticator } from "@aws-amplify/ui-react";
 
 const Logout = ({ signOut }) => {
   const handleLogout = () => {
@@ -34,6 +34,6 @@ const Logout = ({ signOut }) => {
   );
 };
 
-export default Logout;
 
-//export default withAuthenticator(Logout);
+
+export default withAuthenticator(Logout);
